@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Roimy_Zomsa">
+		<title>Roimy_Zomsa's novel world</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!--Custom　CSS-->	
+		<link rel="stylesheet" href="../css/product.css">
+		<!--Custom JavaScript-->
+		<script src="../javascript/accordion.js"></script>
+	</head>
+	<script language="javascript" type="text/javascript">
+ 
+		function Display_JS(product){
+				if(product == "top"){
+					
+						document.getElementById("JS").innerHTML ='<h5><a href="javascript:;" onclick="Display_JS("cor")">クリスタラオブローデシア</a></h5> <h5><a href="javascript:;" onclick="Display_JS("log")">ラストオブグランダルシア</a></h5>'				
+				}else if(product == "cor"){
+		 
+						document.getElementById("JS").innerHTML = '<div class="top-menu-grid"><a href="./code/html/product.html">キャラ</a> </div>';
+		 
+				}else if(product == "log"){
+		 
+						document.getElementById("JS").innerHTML = '<div class="top-menu-grid"><a href="./code/html/product.html">1</i></a> </div>';
+		 
+				}
+		}
+		 
+		</script>
+	<body>
+		<input type="checkbox" id="navcheck" role="button" title="menu">
+		<label class="icon" for="navcheck" aria-hidden="true" title="menu">
+			<span class="burger">
+				<span class="bar">
+					<span class="visuallyhidden">Menu</span>
+				</span>
+			</span>
+		</label>
+
+		<nav id="menu">
+			<label for="top" class="item">トップページ <i class="fas fa-chevron-down"></i></label>
+			<input id="top" class="according" type="checkbox"></input>
+			<ul id="top-item" class="items">
+				<li>利用規約・ルール</li>
+				<li>よくある質問</li>
+				<li>外部ソース</li>
+				<li>旧作</li>
+			</ul>
+
+			<label for="planets" class="item">全般 <i class="fas fa-chevron-down"></i></label>
+			<input id="planets" class="according" type="checkbox"></input>
+			<ul id="planets-item" class="items">
+				<li>ムード</li>
+				<li>イマジニアス</li>
+			</ul>
+
+			<label for="planets" class="item">ムード <i class="fas fa-chevron-down"></i></label>
+			<input id="planets" class="according" type="checkbox"></input>
+			<ul id="planets-item" class="items">
+				<li>ムード</li>
+				<li>イマジニアス</li>
+			</ul>
+
+			<label for="planets" class="item">イマジニアス <i class="fas fa-chevron-down"></i></label>
+			<input id="planets" class="according" type="checkbox"></input>
+			<ul id="planets-item" class="items">
+				<li>ムード</li>
+				<li>イマジニアス</li>
+			</ul>
+
+			<label for="other" class="item">その他 <i class="fas fa-chevron-down"></i></label>
+			<input id="other" class="according" type="checkbox"></input>
+			<ul id="other-item" class="items">
+				<li>参考文献</li>
+			</ul>
+			
+		</nav>
+
+		<div id="top_header">
+			<header>
+				<h1 id="top_title">Project Last Stories</h1>
+			</header>
+
+			<main>
+					<h5><a href="javascript:;" onclick="Display_JS('top')">戻る</a></h5>
+					<h5><a href="javascript:;" onclick="Display_JS('cor')">クリスタラオブローデシア</a></h5>
+					<h5><a href="javascript:;" onclick="Display_JS('log')">ラストオブグランダルシア</a></h5>
+				<article class="content">
+					<p>どちらから探しますか？</p>
+						<div id="JS">
+								<p>上記「切り替え」をクリックすると、ここの内容が切り替わります。</p>
+						</div>
+				</article>
+			</main>
+		</div>
+	</body>
+</html>
