@@ -41,6 +41,12 @@ input {
   opacity: 0;
 }
 
+
+a:link { color: #dcdcdc; }
+a:visited { color: #dcdcdc; }
+a:hover { color: #dcdcdc; }
+a:active { color: #dcdcdc; }
+
 /*CSS Grid*/
 .top-menu-grid {
   display: grid; 
